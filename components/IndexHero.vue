@@ -77,5 +77,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-height: 200vh;
+  height: 100%;
 }
 </style>

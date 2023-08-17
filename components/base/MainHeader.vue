@@ -8,7 +8,7 @@
         <img class="sm:w-[200px] w-[120px]" src="/icons/logo.svg" alt="agency_ai_logo">
       </div>
       <nav class="nav-desktop">
-        <ul class="flex items-center lg:space-x-8 space-x-4">
+        <ul class="header_one flex items-center lg:space-x-8 space-x-4">
           <NuxtLink to="/" class="border-b-2 border-transparent hover:border-b-2 hover:border-[#AB3ADD] hover:text-[#AB3ADD] transition duration-300">Products</NuxtLink>
           <NuxtLink to="/features" class="border-b-2 border-transparent hover:border-b-2 hover:border-[#AB3ADD] hover:text-[#AB3ADD] transition duration-300">Features</NuxtLink>
           <NuxtLink to="/how-it-works" class="border-b-2 border-transparent hover:border-b-2 hover:border-[#AB3ADD] hover:text-[#AB3ADD] transition duration-300">How It Works</NuxtLink>
@@ -37,7 +37,7 @@
         <img class="w-[120px]" src="/icons/logo.svg" alt="agency_ai_logo">
       </div>
       <nav>
-        <ul class="flex items-start flex-col space-y-6">
+        <ul class="header_one flex items-start flex-col space-y-6">
           <a href="#"><li class="border-b-2 border-transparent hover:border-b-2 hover:border-[#AB3ADD] hover:text-[#AB3ADD] transition duration-300">Products</li></a>
           <a href="#"><li class="border-b-2 border-transparent hover:border-b-2 hover:border-[#AB3ADD] hover:text-[#AB3ADD] transition duration-300">Features</li></a>
           <a href="#"><li class="border-b-2 border-transparent hover:border-b-2 hover:border-[#AB3ADD] hover:text-[#AB3ADD] transition duration-300">How It Works</li></a>
@@ -71,7 +71,7 @@ const toggleMobileNav = () => {
 };
 </script>
 
-<style>
+<style scoped>
 .nav-mobile { display: none;}
 .togglebtn { display: none;}
 
@@ -83,7 +83,7 @@ const toggleMobileNav = () => {
   transform: translateX(-20px);
 }
 
-a.router-link-active {
+.header_one > a.router-link-active {
   border-bottom: 2px solid #AB3ADD;
   color: #AB3ADD
 }
