@@ -2,12 +2,12 @@
   <main class="d-container">
     <section id="our-services">
         <h1
-          class="relative sm:pb-[70px] pb-[35px] lg:text-[48px] sm:text-[32px] text-[26px] font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-[#AB3ADD] via-[#AB3ADD] to-[#3B57F4]"
+          :class="`relative ${titleColor} sm:pb-[70px] pb-[35px] lg:text-[48px] sm:text-[32px] text-[26px] font-bold text-center`"
         >
           Our Services
         </h1>
         <div
-          class="text-wrapper grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-x-[60px] gap-x-[10px] sm:gap-y-[80px] gap-y-[40px]"
+          :class="`text-wrapper grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-x-[60px] gap-x-[10px] sm:gap-y-[80px] gap-y-[40px]`"
         >
           <div
             v-for="(service, i) in ourServices"
@@ -20,7 +20,7 @@
               alt="icon"
             />
             <h1
-              class="sm:text-[20px] text-[16px] sm:pt-[30px] pt-[10px] pb-2 font-bold"
+              :class="`sm:text-[20px] text-[16px] sm:pt-[30px] pt-[10px] ${headerTextColor} pb-2 font-bold`"
             >
               {{ service.header }}
             </h1>
@@ -46,6 +46,16 @@
 </template>
 
 <script setup lang="ts">
+defineProps({
+  headerTextColor: {
+    type: String,
+    default: 'text-[#333]'
+  },
+  titleColor: {
+    type: String,
+    default: 'text-[#333]'
+  }
+})
 const ourServices = ref([
   {
     header: "Copywriting",

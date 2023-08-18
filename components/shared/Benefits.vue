@@ -2,7 +2,7 @@
     <section class="d-container" id="benefits">
         <div>
           <h1
-            class="relative sm:pb-[70px] pb-[35px] lg:text-[48px] sm:text-[32px] text-[26px] font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-[#AB3ADD] via-[#AB3ADD] to-[#3B57F4]"
+            :class="`relative sm:pb-[70px] pb-[35px] lg:text-[48px] sm:text-[32px] text-[26px] font-bold text-center ${headerTextColor}`"
           >
             Benefits of [COMPANY NAME] <br />
             Services
@@ -45,6 +45,13 @@
 </template>
 
 <script setup lang="ts">
+
+defineProps({
+  headerTextColor: {
+    type: String,
+    default: 'text-[#333]'
+  }
+})
 
 const benefitsOne = ref([
   {

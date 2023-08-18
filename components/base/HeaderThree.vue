@@ -5,7 +5,7 @@
    >
      <div class="max-w-[1200px] mx-auto w-full flex items-center justify-between">
        <div>
-         <img class="sm:w-[200px] w-[120px]" src="/icons/footer_logo.svg" alt="agency_ai_logo">
+         <img class="sm:w-[200px] w-[120px]" src="/icons/logo.svg" alt="agency_ai_logo">
        </div>
        <nav class="nav-desktop">
          <ul class="header_three flex items-center lg:space-x-8 space-x-4 text-[#333]">

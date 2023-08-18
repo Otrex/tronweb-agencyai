@@ -12,7 +12,7 @@
             <form class="lg:mt-[50px] md:mt-[40px] mt-[24px] text-[#fff]">
               <input class="md:px-[24px] px-[12px] md:py-[20px] py-[16px] w-full border md:rounded-[100px] rounded-[50px] border-[#DCDCDC] bg-transparent lg:mb-[30px] md:mb-[24px] mb-[20px]" type="text" name="name" placeholder="Full Name">
               <input class="md:px-[24px] px-[12px] md:py-[20px] py-[16px] w-full border md:rounded-[100px] rounded-[50px] border-[#DCDCDC] bg-transparent md:mb-[40px] mb-[25px]" type="email" name="email" placeholder="Email Address">
-              <button class="w-[40%] bg-[#fff] md:py-[21px] py-[16px] md:px-[32px] px-[20px] md:text-[20px] text-[16px] text-[#3B57F4] rounded-[100px]">
+              <button class="lg:w-[40%] md:w-[75%] bg-[#fff] md:py-[21px] py-[16px] md:px-[32px] px-[20px] md:text-[20px] text-[16px] text-[#3B57F4] rounded-[100px]">
                   Get Started
               </button>
             </form>
