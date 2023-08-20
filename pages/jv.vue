@@ -20,19 +20,20 @@ definePageMeta({
   layout: false,
 });
 
+
 useHead({
   title: "AgencyAI JV",
   link: [
     {
       rel: "image_src",
-      href: window.location.origin + '/meta/WebsitePreview.png'
+      href: 'https://useagencyai.com/meta/WebsitePreview.png'
     },
     { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-        { rel: "icon", type: "image/png", href: "/favicon-32x32.png" },
-        { rel: "icon", type: "image/png", href: "/favicon-16x16.png" },
-        { rel: "manifest", href: "/site.webmanifest" },
-        { rel: "preconnect", href: "https://rsms.me/" },
-        { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
+    { rel: "icon", type: "image/png", href: "/favicon-32x32.png" },
+    { rel: "icon", type: "image/png", href: "/favicon-16x16.png" },
+    { rel: "manifest", href: "/site.webmanifest" },
+    { rel: "preconnect", href: "https://rsms.me/" },
+    { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
   ],
   meta: [
     {
@@ -48,7 +49,7 @@ useHead({
     {
       name: 'og:image',
       hid: 'og:image',
-      content: window.location.origin + '/meta/WebsitePreview.png'
+      content: 'https://useagencyai.com/meta/WebsitePreview.png'
     }
   ]
 })
