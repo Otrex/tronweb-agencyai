@@ -1,9 +1,9 @@
 {
-  "script": "yarn preview",
+  "script": "npx serve ./.output/public",
   "watch": true,
   "ignore_watch": ["public"],
   "watch_options": {
     "followSymlinks": false
   },
-  "name": "nuxt-server"
+  "name": "website-jv-server"
 }
